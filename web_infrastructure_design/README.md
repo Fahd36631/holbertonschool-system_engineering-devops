@@ -39,11 +39,31 @@ It also explains:
 - How Primary-Replica replication works
 - Remaining limitations (SPOF, no firewall/HTTPS, no monitoring)
 
+## Task 2: Secured and Monitored Web Infrastructure
+
+File: `2-secured_and_monitored_web_infrastructure`
+
+This task describes a secured and monitored three-server infrastructure for `www.foobar.com` with:
+
+- One load balancer (`HAproxy`) with SSL termination
+- Three firewalls (one per server)
+- Three monitoring agents/clients (one per server)
+- Two application servers (`Nginx` + app server + app files)
+- One `MySQL` Primary-Replica setup
+
+It also explains:
+
+- Why firewalls, HTTPS, and monitoring are added
+- How monitoring data is collected
+- How to monitor web server QPS
+- Remaining design issues (SSL termination risks, single writable DB node, mixed server roles)
+
 ## Note
 
 Replace the placeholder screenshot links in:
 
 - `0-simple_web_stack`
 - `1-distributed_web_infrastructure`
+- `2-secured_and_monitored_web_infrastructure`
 
 with your real diagram URLs (for example, Imgur links) before submission.
