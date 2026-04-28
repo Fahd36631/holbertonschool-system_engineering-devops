@@ -58,6 +58,22 @@ It also explains:
 - How to monitor web server QPS
 - Remaining design issues (SSL termination risks, single writable DB node, mixed server roles)
 
+## Task 3: Scale Up
+
+File: `3-scale_up`
+
+This task describes a scaled-up infrastructure for `www.foobar.com` with:
+
+- One additional server
+- A second `HAproxy` load balancer clustered with the first
+- Split architecture where web, application, and database components are hosted on dedicated servers
+
+It also explains:
+
+- Why each new element is added
+- How this design improves availability and scalability
+- Why separating service roles improves operations and performance
+
 ## Note
 
 Replace the placeholder screenshot links in:
@@ -65,5 +81,6 @@ Replace the placeholder screenshot links in:
 - `0-simple_web_stack`
 - `1-distributed_web_infrastructure`
 - `2-secured_and_monitored_web_infrastructure`
+- `3-scale_up`
 
 with your real diagram URLs (for example, Imgur links) before submission.
